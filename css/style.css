@@ -441,6 +441,64 @@ ul {
     transform: translateY(-3px);
 }
 
+/* Projects Section */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 15px;
+    transition: var(--transition);
+    border-top: 3px solid var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.project-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.project-card p {
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.tech-stack span {
+    background: rgba(112, 0, 255, 0.1);
+    color: var(--secondary-color);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.btn-small {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
 /* Education Section */
 .education-grid {
     display: grid;
